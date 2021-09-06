@@ -1,0 +1,237 @@
+    /* Default CSS */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .clearfix::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    img{
+        max-width: 100%;
+    }
+    .text-left{
+        text-align: left;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .text-right
+    {
+        text-align: right;
+    }
+    body{
+        height: 1000px;
+    }
+
+    /* Header CSS */
+    .fixed-width{
+        width: 1000px;
+        margin: auto;
+    }
+    .header{
+        background-color: #18dcff;
+    }
+    .header-left{
+        float: left;
+        width: 15%;
+        margin-top: 5px;
+    }
+    .header-left img{
+        width: 170px;
+        height: auto;
+    }
+    .header-right{
+        float: right;
+        width: 60%;
+    }
+
+    .header-right ul{
+        text-align: right;
+    }
+    .header-right ul li{
+        display: inline-block;
+        margin-left: -4px;
+    }
+    .header-right ul li a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 0 25px;
+        font-size: 20px;
+        line-height: 62px;
+        border-right: 1px solid rgb(255, 255, 255);
+        
+    }
+    .header-right ul li:first-child a{
+        border-left: 1px solid white;
+    }
+    .header-right ul li a:hover{
+        background-color: #17c0eb;
+        transition: .4s;
+    }
+
+    .banner-caption{
+        text-align: center;
+    }
+    .banner{
+        background: url(./Morning\ Mist\ On\ A\ Lake\ \ 2560\ x\ 1440.jpg) no-repeat center;
+        padding: 180px 0;
+        background-size: 1380px;
+        background-attachment: fixed;
+    }
+    .banner-caption h2{
+        color: rgb(70, 177, 180);
+        background-color: rgba(43, 53, 112, 0.479);
+        display: inline-block;
+        padding: 5px 20px;
+        border-radius: 20px;
+        font-size: 30px;
+    }
+    .banner-caption h5{
+        color: rgb(255, 255, 255);
+        background-color: rgba(214, 198, 198, 0.568);
+        max-width: 500px;
+        margin: auto;
+        font-family: 'Dancing Script', cursive;
+        font-size: 9px;
+        padding: 5px 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        position: relative;
+        z-index: +1;
+    }
+    .banner-caption h5::before{
+        content: "";
+        background-color: rgb(98, 99, 28);
+        height: 100%;
+        width: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        z-index: -1;
+    }
+    .banner-caption h5:hover::before{
+        width: 100%;
+        transition: .4s;
+    }
+
+        /* about section */
+    .about{
+        margin-top: 10px;
+    }
+    .about h2{
+        margin-bottom: 5px;
+    }
+        /* Service Section */
+    .service-item{
+        float: left;
+        width: 31.3%;
+        border: 1px solid grey;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 2%;
+        padding: 10px 5px;
+    }
+    .service-item span{
+        display: block;
+        height: 50px;
+        width: 50px;
+        margin: auto;
+        line-height: 50px;
+        background-color: #d85583;
+        font-size: 30px;
+        color: white;
+        border-radius: 20px 0 20px 0;
+        position: relative;
+        z-index: +1;
+    }
+    .service-item span::before{
+        content: "";
+        height: 0;
+        width: 100%;
+        background-color: #3dc1d3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 20px 0 20px 0;
+        z-index: -1;
+    }
+    .service-item span:hover::before{
+        height: 100%;
+        transition: .5s;
+    }
+    .service-item h3{
+        margin: 5px 0;
+    }
+    .fixed-width p{
+        max-width: 80%;
+        margin: auto;
+    }
+
+    /* Blog Item */
+    .blog-left-content{
+        float: left;
+        width: 70%;
+    }
+    .blog-right-content{
+        float: right;
+        width: 25%;
+    }
+    .blog-item{
+        margin: 20px 0;
+    }
+    .blog-item img{
+        float: left;
+        height: 140px;
+        width: auto;
+       margin-right: 10px ;
+        
+    }
+    .blog-right-content{
+        margin-top: 50px;
+    }
+    .blog-right-content ul {
+        list-style-type: none;
+        margin-top: 5px;
+    }
+    .blog-right-content ul li {
+        padding: 7.5px 10px;
+        border: 1px solid grey;
+        background-color: #fafafa;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    .blog-right-content ul li:hover{
+        background-color: #c9c9c9;
+        cursor: pointer;
+    }
+
+    /* footer */
+    .footer{
+        background: rgb(94, 94, 94);
+        color: #fafafa;
+        padding: 10px 0;
+    }
+.footer-left{
+    float: left;
+    width: 40%;
+}
+.footer-right{
+    float: right;
+    width: 20%;
+}
+.footer-right ul{
+    list-style-type: none;
+}
+.footer-right ul li{
+    display: inline-block;   
+}
+.footer-right ul li a{
+    color: white;
+    margin-left: 10px;
+}
